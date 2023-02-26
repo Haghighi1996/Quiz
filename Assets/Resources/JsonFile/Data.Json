@@ -1,0 +1,64 @@
+{
+  "quizes": [
+    {
+      "word": "Bear",
+      "options": 
+      {
+        "1": "/Resources/Picture/Bear.jpg" ,
+        "2": "/Resources/Picture/Cat.jpg" ,
+        "3": "/Resources/Picture/Dog.jpg" ,
+        "4": "/Resources/Picture/Tiger.jpg" 
+      },
+      "answer": 1
+    },
+    {
+      "word": "Tiger",
+      "options": 
+      {
+        "1": "/Resources/Picture/Bear.jpg" ,
+        "2": "/Resources/Picture/Cat.jpg" ,
+        "3": "/Resources/Picture/Dog.jpg" ,
+        "4": "/Resources/Picture/Tiger.jpg" 
+      },
+      "answer": 4
+    },
+    {
+      "word": "Cat",
+      "options": 
+      {
+        "1": "/Resources/Picture/Bear.jpg" ,
+        "2": "/Resources/Picture/Cat.jpg" ,
+        "3": "/Resources/Picture/Dog.jpg" ,
+        "4": "/Resources/Picture/Tiger.jpg" 
+      },
+      "answer": 2
+    },
+    {
+      "word": "Dog",
+      "options": 
+      {
+        "1": "/Resources/Picture/Bear.jpg" ,
+        "2": "/Resources/Picture/Cat.jpg" ,
+        "3": "/Resources/Picture/Dog.jpg" ,
+        "4": "/Resources/Picture/Tiger.jpg" 
+      },
+      "answer": 3
+    },
+    {
+      "word": "Ant",
+      "options": 
+      {
+        "1": "/Resources/Picture/Ant.jpg" ,
+        "2": "/Resources/Picture/Cat.jpg" ,
+        "3": "/Resources/Picture/Dog.jpg" ,
+        "4": "/Resources/Picture/Tiger.jpg" 
+      },
+      "answer": 1
+    }
+   
+   
+   
+   
+   
+  ]
+}
