@@ -29,13 +29,15 @@ public class MiniGameHandller : MonoBehaviour, IGameLogic
     private GameObject _contentResultParent;
     #endregion
 
+
     private int _currentRound;
     private int _currectAnswerCount;
     private string m_JsonPath = "/Resources/JsonFile/Data.json";
     private string m_Json;
-    private List<UserAsnwer> _answerdata = new List<UserAsnwer>();
+    private List<UserAsnwer> _answerdata;
 
     public Quiz[] _quizList;
+    public event IGameLogic.OnEndGame OnendGame;
 
     public void Start()
     {
@@ -45,6 +47,7 @@ public class MiniGameHandller : MonoBehaviour, IGameLogic
     public void OnEnable()
     {
         _quizHandler.OnanswerGame += OnShowAnswer;
+        _answerdata = new List<UserAsnwer>();
     }
 
     public async void Init()
@@ -221,6 +224,10 @@ public class MiniGameHandller : MonoBehaviour, IGameLogic
 
     public void End()
     {
+        if(OnendGame != null)
+        {
+            OnendGame(true);
+        }
         Destroy(this.gameObject);
     }
 }

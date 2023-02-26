@@ -23,6 +23,7 @@ public class QuizHandler : MonoBehaviour, IGameLogic
 
     public delegate void OnAnswerGame(bool iscurrect);
     public event OnAnswerGame OnanswerGame;
+    public event IGameLogic.OnEndGame OnendGame;
 
     private List<GameObject> _optionListtmp;
     public List<Sprite> _refrenceSprites;

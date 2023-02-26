@@ -20,10 +20,12 @@ public class MainGameManager : MonoBehaviour
     public void CreatMiniGame(GameObject _minigame)
     {
         ActivePlay(false);
-        _currentMiniGame = GameObject.Instantiate(_minigame);     
+        _currentMiniGame = GameObject.Instantiate(_minigame);
+        var manager = _currentMiniGame.GetComponent<MiniGameHandller>();
+        manager.OnendGame+= ActivePlay;
     }
     private void ActivePlay(bool _isallowed)
-    {
+    {    
         _playBtn.SetActive(_isallowed);
     }
 }
